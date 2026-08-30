@@ -1,0 +1,406 @@
+:root {
+  --accent-green: #1f6b45;
+  --accent-green-hover: #2c8758;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+}
+
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--accent-green-hover);
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 20px 18px 40px;
+  color: #111;
+  background: #fff;
+}
+
+img {
+  display: block;
+}
+
+p {
+  margin: 0 0 1.05em;
+}
+
+ul {
+  margin: 0.5em 0 0;
+  padding-left: 1.2em;
+}
+
+name {
+  display: block;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: clamp(2.5rem, 4.6vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+heading {
+  font-family: 'Lato', 'PingFang SC', sans-serif;
+  font-size: 31px;
+  line-height: 1.1;
+  color: inherit;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--accent-green);
+}
+
+papertitle {
+  font-family: 'Lato', 'PingFang SC', sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  line-height: 1.45;
+}
+
+.page-shell {
+  width: 100%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+}
+
+.intro-section {
+  padding: 18px 0 10px;
+}
+
+.intro-heading {
+  margin-bottom: 28px;
+  text-align: center;
+  position: relative;
+}
+
+.lang-toggle-wrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#lang-toggle {
+  font-family: 'Lato', 'PingFang SC', sans-serif;
+  font-size: 14px;
+  padding: 5px 12px;
+  border: 1px solid #ccd6de;
+  background: #fff;
+  color: #263238;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#lang-toggle:hover,
+#lang-toggle:focus {
+  border-color: var(--accent-green-hover);
+  color: var(--accent-green-hover);
+  outline: none;
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 30%);
+  gap: 30px;
+  align-items: start;
+}
+
+.intro-text {
+  min-width: 0;
+}
+
+.intro-links {
+  margin-top: 1.35em;
+  text-align: center;
+}
+
+.intro-photo {
+  width: 100%;
+}
+
+.intro-photo a {
+  display: block;
+}
+
+.intro-photo img {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.intro-bio {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
+.publication-list {
+  width: 100%;
+}
+
+.paper-row {
+  display: flex;
+}
+
+.paper-media {
+  padding: 8px;
+  padding-bottom: 30px;
+  width: 28%;
+  vertical-align: middle;
+}
+
+.paper-media img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.paper-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px dashed #cfd8dc;
+  border-radius: 4px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  min-height: 150px;
+}
+
+.paper-body {
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 72%;
+  vertical-align: middle;
+}
+
+.experience-list {
+  width: 100%;
+}
+
+.experience-row {
+  display: flex;
+}
+
+.experience-logo-cell {
+  text-align: center;
+  padding: 0px;
+  width: 25%;
+  vertical-align: middle;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.experience-logo-frame {
+  width: min(132px, 100%);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-logo-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.experience-logo-placeholder {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #cfd8dc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #607d8b;
+  font-size: 0.95em;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.experience-text {
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 75%;
+  vertical-align: middle;
+}
+
+@media (min-width: 901px) {
+  .intro-text > p:not(.intro-links) {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 900px) {
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 17px;
+    line-height: 1.45;
+  }
+
+  body {
+    padding: 18px 14px 32px;
+  }
+
+  heading {
+    font-size: 27px;
+  }
+
+  papertitle {
+    font-size: 19px;
+    line-height: 1.35;
+  }
+
+  .intro-heading {
+    margin-bottom: 20px;
+  }
+
+  .intro-content {
+    gap: 18px;
+    grid-template-columns: minmax(0, 1fr) minmax(140px, 32vw);
+  }
+
+  .intro-links {
+    line-height: 1.7;
+  }
+
+  .paper-row,
+  .experience-row {
+    display: block;
+  }
+
+  .paper-media,
+  .paper-body,
+  .experience-logo-cell,
+  .experience-text {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .paper-media {
+    padding: 0 0 12px 0 !important;
+  }
+
+  .paper-media img,
+  .paper-placeholder {
+    max-width: 300px !important;
+    max-height: none !important;
+    margin: 0 auto;
+  }
+
+  .paper-body {
+    padding: 0 0 26px 0 !important;
+  }
+
+  .experience-logo-cell {
+    padding: 0 0 12px 0 !important;
+  }
+
+  .experience-text {
+    padding: 0 0 20px 0 !important;
+  }
+
+  .experience-logo-frame {
+    width: 104px;
+  }
+}
+
+@media (max-width: 620px) {
+  name {
+    font-size: clamp(2.1rem, 8.5vw, 2.7rem);
+    line-height: 1.12;
+  }
+
+  .intro-content {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-photo {
+    order: -1;
+    max-width: 190px;
+    margin: 0 auto;
+  }
+
+  .intro-links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  heading {
+    font-size: 24px;
+  }
+
+  .intro-section {
+    padding-top: 8px;
+  }
+
+  .intro-heading {
+    margin-bottom: 16px;
+  }
+
+  .intro-photo {
+    max-width: 170px;
+  }
+}

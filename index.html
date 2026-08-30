@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>田思宇 | Siyu Tian</title>
+    <meta name="author" content="Siyu Tian" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script>
+      const I18N = {
+        en: {
+          langName: "中文",
+          name: "Siyu Tian",
+          greeting: "Hi, I am Siyu Tian.",
+          intro:
+            "I am an undergraduate in Computer Science and Technology at <strong>Tongji University (Key Discipline Base 2.0)</strong>. My research interests include <strong>embodied AI</strong>, <strong>robot control</strong>, <strong>world models</strong>, and practical applications of large-scale multimodal models. I am currently working on VLA exploration efficiency, world-model-based action reasoning, and LLM alignment for test generation.",
+          introContact: "I would love to connect with everyone and welcome you to contact me.",
+          bio: "Political status: CPC probationary member | Location: Shanghai | GPA: 4.92/5.0 (Rank 1/112)",
+          phone: "Phone: 132-7578-6780",
+          linkEmail: "Email",
+          linkGithub: "GitHub",
+          educationHeader: "Education",
+          educationItem:
+            "<strong>Tongji University (985) · B.S. in Computer Science and Technology</strong> (2023.09 – Present)<br />GPA: 4.92/5.0, Rank: 1/112.",
+          researchHeader: "Publications",
+          research2Meta:
+            "2026, arXiv<br /><a href=\"https://arxiv.org/abs/2608.07619\">arXiv</a> / code / checkpoint",
+          research2Desc:
+            "Proposed GWM-VLA, a geometry-aware latent world model for robust VLA. It aggregates multi-view geometric cues and uses a wrist-centric target view with shared latent-action tokens, enabling better generalization under visual and viewpoint changes.",
+          projectsHeader: "Project Experience",
+          project1:
+            "<strong>EduGraph: Educational Document Parsing and Knowledge-Graph Construction Platform</strong> (2025.07–2025.12, Lead). Built an end-to-end pipeline from OCR to structured knowledge, implemented OCR fusion and semantic correction, developed a full-stack platform (FastAPI + Vue.js + ECharts), and won the 2024–2025 AIC Youth Innovation & Entrepreneurship National Third Prize.",
+          project2:
+            "<strong>Hydrodynamic Performance of an Oscillating Buoy Wave Energy Device with Reflector Plate</strong> (2023.11–2025.03). Assisted market and literature research, prepared reports, completed CAD and STAR-CCM+ simulation, and produced a utility model patent.",
+          project3:
+            "<strong>Underwater Autonomous Robot Design and Development</strong> (2024.11–2025.07). Developed the deep-learning underwater target recognition module, including data processing, model selection, training, and validation.",
+          internshipHeader: "Internship Experience",
+          internship1Title: "Tongji University \"TiEV Tuling\" Intelligent Unmanned Systems Lab",
+          internship1Meta: "Research Intern | 2025.11-2026.7",
+          internship2Title: "Bilibili Live Business Department",
+          internship2Meta: "Research Intern | 2026.03-2026.06",
+          awardsHeader: "Awards and Certificates",
+          award1: "2024–2025 Tongji University Outstanding Student",
+          award2: "2024–2025 Tongji University Outstanding Student Scholarship",
+          award3: "2024–2025 Tongji University Social Activity Scholarship",
+          award4: "2024–2025 National Encouragement Scholarship",
+          award5: "2024–2025 AIC Algorithm Competition",
+          award6: "2023–2024 National Scholarship",
+          award7: "2024–2025 AIC Intelligent Software Innovation Competition: National Second Prize",
+          award8: "2024–2025 AIC Algorithm Competition: National First Prize",
+          award9: "2024–2025 CMC (College Mathematical Contest): Shanghai Regional Second Prize",
+          award10: "2024–2025 CUMCM (Chinese Undergraduate Mathematical Contest in Modeling): National Second Prize",
+          award11: "2023–2024 Tongji University Applied Mechanics Innovation Competition: National Second Prize",
+        },
+        zh: {
+          langName: "EN",
+          name: "田思宇",
+          greeting: "你好，我是田思宇。",
+          intro:
+            "我目前就读于同济大学计算机科学与技术（基础学科拔尖基地2.0）。研究方向为具身智能、机器人控制、世界模型与大模型应用，近期关注 VLA 探索效率提升、世界模型驱动动作推理及 LLM 测试生成对齐。",
+          introContact: "我很希望能和大家交流，欢迎联系我。",
+          bio: "政治面貌：中共预备党员 ｜ 所在地：上海 ｜ GPA：4.92/5.0（专业前1/112）",
+          phone: "电话：132-7578-6780",
+          linkEmail: "邮箱",
+          linkGithub: "GitHub",
+          educationHeader: "教育背景",
+          educationItem:
+            "<strong>同济大学（985 / 双一流） · 计算机科学与技术（本科）</strong>（2023.09 – 至今）<br />GPA：4.92/5.0，专业排名：1/112。",
+          researchHeader: "Publications",
+          research2Meta:
+            "2026，arXiv 预印本<br /><a href=\"https://arxiv.org/abs/2608.07619\">arXiv</a> / code / checkpoint",
+          research2Desc:
+            "提出 GWM-VLA，一个几何感知的潜世界模型。方法通过多视角几何聚合和手腕视角为中心的目标预测机制，结合共享动作潜变量，提升模型在视觉与视角变化下的鲁棒性。",
+          projectsHeader: "项目经历",
+          project1:
+            "<strong>EduGraph：教育文档智能解析与知识图谱构建平台</strong>（2025.07–2025.12，负责人）。构建基于 OCR 的知识抽取闭环（实体识别+关系抽取），搭建 FastAPI + Vue.js + ECharts 平台并在校内落地。",
+          project2:
+            "<strong>振荡浮子式波浪能装置在反射板作用下的水动力性能研究</strong>（2023.11–2025.03）。完成调研、综述与仿真，产出一项实用新型专利。",
+          project3:
+            "<strong>水下自主机器人设计与开发（目标识别）</strong>（2024.11–2025.07）。完成基于 YOLOv5 的数据标注、模型训练和验证流程。",
+          internshipHeader: "实习经历",
+          internship1Title: "同济大学“TiEV 途灵”智能无人系统实验室",
+          internship1Meta: "科研实习生 | 2025.11-2026.7",
+          internship2Title: "Bilibili 直播业务部门",
+          internship2Meta: "研究实习生 | 2026.03-2026.06",
+          awardsHeader: "获奖与证书",
+          award1: "2024–2025 同济大学优秀学生",
+          award2: "2024–2025 同济大学优秀学生奖学金",
+          award3: "2024–2025 同济大学社会活动奖学金",
+          award4: "2024–2025 国家励志奖学金",
+          award5: "2024–2025 AIC Algorithm Competition",
+          award6: "2023–2024 国家奖学金",
+          award7: "2024–2025 AIC·智能软件创新赛全国二等奖",
+          award8: "2024–2025 AIC Algorithm Competition 全国一等奖",
+          award9: "2024–2025 全国大学生数学竞赛（CMC）上海赛区二等奖",
+          award10: "2024–2025 全国大学生数学建模竞赛（CUMCM）全国二等奖",
+          award11: "2023–2024 同济大学应用力学创新竞赛全国二等奖",
+        }
+      };
+
+      function applyLang(lang) {
+        const dict = I18N[lang];
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key] !== undefined) {
+            el.innerHTML = dict[key];
+          }
+        });
+        document.documentElement.setAttribute("lang", lang === "zh" ? "zh-CN" : "en");
+        const btn = document.getElementById("lang-toggle");
+        if (btn) btn.textContent = dict.langName;
+        localStorage.setItem("lang", lang);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("a[href]").forEach((link) => {
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noopener noreferrer");
+        });
+
+        const saved = localStorage.getItem("lang");
+        let current = saved === "zh" ? "zh" : "en";
+        applyLang(current);
+
+        const btn = document.getElementById("lang-toggle");
+        btn.addEventListener("click", function () {
+          current = current === "en" ? "zh" : "en";
+          applyLang(current);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <table class="page-shell">
+      <tbody>
+        <tr>
+          <td>
+            <section class="intro-section">
+              <div class="intro-heading">
+                <div class="lang-toggle-wrap">
+                  <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+                </div>
+                <name><span data-i18n="name"></span></name>
+              </div>
+              <div class="intro-content">
+                <div class="intro-text">
+                  <p data-i18n="greeting"></p>
+                  <p data-i18n="intro"></p>
+                  <p class="intro-bio" data-i18n="introContact"></p>
+                  <p class="intro-bio" data-i18n="bio"></p>
+                  <p class="intro-links">
+                    <a href="mailto:2350752@tongji.edu.cn"><span data-i18n="linkEmail">Email</span></a> &nbsp;/&nbsp;
+                    <a href="https://github.com/Tiansiyu-tj"><span data-i18n="linkGithub">GitHub</span></a>
+                  </p>
+                  <p class="intro-bio" data-i18n="phone"></p>
+                </div>
+                <div class="intro-photo">
+                  <a href="./411270ab63c1d5fa4b54c9c0bcb367e7.jpg">
+                    <img alt="Siyu Tian" src="./411270ab63c1d5fa4b54c9c0bcb367e7.jpg" class="hoverZoomLink" />
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 5px; padding-top: 20px">
+                    <heading data-i18n="educationHeader"></heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li data-i18n="educationItem"></li>
+            </ul>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 5px; padding-top: 20px">
+                    <heading data-i18n="researchHeader"></heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="publication-list" style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody>
+                <tr class="paper-row">
+                  <td class="paper-media" style="padding: 8px; padding-bottom: 30px; width: 28%; vertical-align: middle">
+                    <img class="paper-media-image" src="./image.png" alt="GWM-VLA illustration" />
+                  </td>
+                  <td class="paper-body" style="padding: 20px; padding-bottom: 30px; width: 72%; vertical-align: middle">
+                    <papertitle>GWM-VLA: Geometry-Aware Latent World Modeling for Vision-Language-Action Learning</papertitle>
+                    <br />
+                    <span style="font-size: 0.95em; line-height: 1.4;" data-i18n="research2Meta"></span>
+                    <p style="margin-bottom: 10px; margin-top: 10px" data-i18n="research2Desc"></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 20px; padding-top: 30px">
+                    <heading data-i18n="projectsHeader"></heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 20px; padding-top: 30px">
+                    <ul>
+                      <li data-i18n="project1"></li>
+                      <li data-i18n="project2"></li>
+                      <li data-i18n="project3"></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 20px; padding-top: 30px">
+                    <heading data-i18n="internshipHeader"></heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="experience-list" width="100%" align="center" border="0">
+              <tbody>
+                <tr class="experience-row">
+                  <td class="experience-logo-cell" style="padding: 0px; padding-left: 55px; padding-right: 55px; width: 25%; vertical-align: middle">
+                    <div class="experience-logo-frame">
+                      <a href="https://www.tongji.edu.cn/" aria-label="TiEV Tuling">
+                        <img class="experience-logo-image" src="./50038070.jpg" alt="TiEV logo" />
+                      </a>
+                    </div>
+                  </td>
+                  <td class="experience-text" style="padding: 20px; padding-top: 15px; padding-bottom: 15px" width="75%" vertical-align="middle">
+                    <papertitle data-i18n="internship1Title"></papertitle>
+                    <br />
+                    <span data-i18n="internship1Meta"></span>
+                  </td>
+                </tr>
+                <tr class="experience-row">
+                  <td class="experience-logo-cell" style="padding: 0px; padding-left: 55px; padding-right: 55px; width: 25%; vertical-align: middle">
+                    <div class="experience-logo-frame">
+                      <a href="https://www.bilibili.com/" aria-label="Bilibili">
+                        <img class="experience-logo-image" src="./bilibili.png" alt="Bilibili logo" />
+                      </a>
+                    </div>
+                  </td>
+                  <td class="experience-text" style="padding: 20px; padding-top: 15px; padding-bottom: 15px" width="75%" vertical-align="middle">
+                    <papertitle data-i18n="internship2Title"></papertitle>
+                    <br />
+                    <span data-i18n="internship2Meta"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 20px; padding-top: 30px">
+                    <heading data-i18n="awardsHeader"></heading>
+                    <ul>
+                      <li data-i18n="award1"></li>
+                      <li data-i18n="award2"></li>
+                      <li data-i18n="award3"></li>
+                      <li data-i18n="award4"></li>
+                      <li data-i18n="award5"></li>
+                      <li data-i18n="award6"></li>
+                      <li data-i18n="award7"></li>
+                      <li data-i18n="award8"></li>
+                      <li data-i18n="award9"></li>
+                      <li data-i18n="award10"></li>
+                      <li data-i18n="award11"></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
