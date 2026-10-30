@@ -13,7 +13,9 @@
           name: "Siyu Tian",
           greeting: "Hi, I am Siyu Tian.",
           intro:
-            "I am an undergraduate in Computer Science and Technology at <strong>Tongji University (Key Discipline Base 2.0)</strong>. My research interests include <strong>embodied AI</strong>, <strong>robot control</strong>, <strong>world models</strong>, and practical applications of large-scale multimodal models. I am currently working on VLA exploration efficiency, world-model-based action reasoning, and LLM alignment for test generation.",
+            "I am an undergraduate in Computer Science and Technology at <strong>Tongji University (Key Discipline Base 2.0)</strong>. My research interests include <strong>embodied AI</strong>, <strong>robot control</strong>, <strong>world models</strong>, and practical applications of large-scale multimodal models. I am currently focused on improving VLA exploration efficiency and generalization, as well as world-model-driven action reasoning. Previously at Bilibili, I explored aligning LLM agents for test generation.",
+          introPhd:
+            "I will join SAI to pursue a research Ph.D. in a joint program with Peking University, advised by Prof. <a href=\"https://hughw19.github.io/\">He Wang</a> and Prof. <a href=\"https://kam1107.github.io/\">Yuanbo Xiangli</a>.",
           introContact: "I would love to connect with everyone and welcome you to contact me.",
           bio: "Political status: CPC probationary member | Location: Shanghai | GPA: 4.92/5.0 (Rank 1/112)",
           phone: "Phone: 132-7578-6780",
@@ -35,6 +37,8 @@
           project3:
             "<strong>Underwater Autonomous Robot Design and Development</strong> (2024.11–2025.07). Developed the deep-learning underwater target recognition module, including data processing, model selection, training, and validation.",
           internshipHeader: "Internship Experience",
+          internship3Title: "Galbot",
+          internship3Meta: "Intern | 2026.09–Present",
           internship1Title: "Tongji University \"TiEV Tuling\" Intelligent Unmanned Systems Lab",
           internship1Meta: "Research Intern | 2025.11-2026.7",
           internship2Title: "Bilibili Live Business Department",
@@ -57,7 +61,9 @@
           name: "田思宇",
           greeting: "你好，我是田思宇。",
           intro:
-            "我目前就读于同济大学计算机科学与技术（基础学科拔尖基地2.0）。研究方向为具身智能、机器人控制、世界模型与大模型应用，近期关注 VLA 探索效率提升、世界模型驱动动作推理及 LLM 测试生成对齐。",
+            "我目前就读于同济大学计算机科学与技术（基础学科拔尖基地2.0）。研究方向为具身智能、机器人控制、世界模型与大模型应用，近期关注 VLA 探索效率提升、泛化性、世界模型驱动动作推理。我曾在哔哩哔哩公司探索过 LLM Agent 测试生成对齐。",
+          introPhd:
+            "我即将加入 SAI 攻读学术博士学位，与北京大学联合培养，指导老师为<a href=\"https://hughw19.github.io/\">王鹤</a>老师和<a href=\"https://kam1107.github.io/\">相里元博</a>老师。",
           introContact: "我很希望能和大家交流，欢迎联系我。",
           bio: "政治面貌：中共预备党员 ｜ 所在地：上海 ｜ GPA：4.92/5.0（专业前1/112）",
           phone: "电话：132-7578-6780",
@@ -79,6 +85,8 @@
           project3:
             "<strong>水下自主机器人设计与开发（目标识别）</strong>（2024.11–2025.07）。完成基于 YOLOv5 的数据标注、模型训练和验证流程。",
           internshipHeader: "实习经历",
+          internship3Title: "Galbot（银河通用机器人）",
+          internship3Meta: "实习生 | 2026.09–至今",
           internship1Title: "同济大学“TiEV 途灵”智能无人系统实验室",
           internship1Meta: "科研实习生 | 2025.11-2026.7",
           internship2Title: "Bilibili 直播业务部门",
@@ -147,6 +155,7 @@
                 <div class="intro-text">
                   <p data-i18n="greeting"></p>
                   <p data-i18n="intro"></p>
+                  <p data-i18n="introPhd"></p>
                   <p class="intro-bio" data-i18n="introContact"></p>
                   <p class="intro-bio" data-i18n="bio"></p>
                   <p class="intro-links">
@@ -205,29 +214,6 @@
               <tbody>
                 <tr>
                   <td style="padding-bottom: 20px; padding-top: 30px">
-                    <heading data-i18n="projectsHeader"></heading>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td style="padding-bottom: 20px; padding-top: 30px">
-                    <ul>
-                      <li data-i18n="project1"></li>
-                      <li data-i18n="project2"></li>
-                      <li data-i18n="project3"></li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-              <tbody>
-                <tr>
-                  <td style="padding-bottom: 20px; padding-top: 30px">
                     <heading data-i18n="internshipHeader"></heading>
                   </td>
                 </tr>
@@ -235,6 +221,20 @@
             </table>
             <table class="experience-list" width="100%" align="center" border="0">
               <tbody>
+                <tr class="experience-row">
+                  <td class="experience-logo-cell" style="padding: 0px; padding-left: 55px; padding-right: 55px; width: 25%; vertical-align: middle">
+                    <div class="experience-logo-frame">
+                      <a href="https://www.galbot.com/" aria-label="Galbot">
+                        <img class="experience-logo-image" src="./galbot.png" alt="Galbot logo" />
+                      </a>
+                    </div>
+                  </td>
+                  <td class="experience-text" style="padding: 20px; padding-top: 15px; padding-bottom: 15px" width="75%" vertical-align="middle">
+                    <papertitle data-i18n="internship3Title"></papertitle>
+                    <br />
+                    <span data-i18n="internship3Meta"></span>
+                  </td>
+                </tr>
                 <tr class="experience-row">
                   <td class="experience-logo-cell" style="padding: 0px; padding-left: 55px; padding-right: 55px; width: 25%; vertical-align: middle">
                     <div class="experience-logo-frame">
@@ -283,6 +283,29 @@
                       <li data-i18n="award9"></li>
                       <li data-i18n="award10"></li>
                       <li data-i18n="award11"></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 20px; padding-top: 30px">
+                    <heading data-i18n="projectsHeader"></heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td style="padding-bottom: 20px; padding-top: 30px">
+                    <ul>
+                      <li data-i18n="project1"></li>
+                      <li data-i18n="project2"></li>
+                      <li data-i18n="project3"></li>
                     </ul>
                   </td>
                 </tr>
